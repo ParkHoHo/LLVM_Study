@@ -1,0 +1,10 @@
+set(LLVM_LINK_COMPONENTS
+		Support
+   )
+add_calc_tool(calc
+		Calc.cpp
+		)
+target_link_libraries(calc
+		PRIVATE
+		calcBasic
+		)
